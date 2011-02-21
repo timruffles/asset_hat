@@ -110,20 +110,20 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<hanna>, [">= 0.1.12"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10.2"])
       s.add_runtime_dependency(%q<cssmin>, [">= 1.0.2"])
-      s.add_runtime_dependency(%q<timr-jsmin>, ["~> 1.0.1"])
+      s.add_runtime_dependency(%q<timr_jsmin>, ["~> 1.0.1a"])
     else
       s.add_dependency(%q<flexmock>, [">= 0.8.6"])
       s.add_dependency(%q<hanna>, [">= 0.1.12"])
       s.add_dependency(%q<shoulda>, [">= 2.10.2"])
       s.add_dependency(%q<cssmin>, [">= 1.0.2"])
-      s.add_dependency(%q<timr-jsmin>, ["~> 1.0.1"])
+      s.add_dependency(%q<timr_jsmin>, ["~> 1.0.1a"])
     end
   else
     s.add_dependency(%q<flexmock>, [">= 0.8.6"])
     s.add_dependency(%q<hanna>, [">= 0.1.12"])
     s.add_dependency(%q<shoulda>, [">= 2.10.2"])
     s.add_dependency(%q<cssmin>, [">= 1.0.2"])
-    s.add_dependency(%q<timr-jsmin>, ["~> 1.0.1"])
+    s.add_dependency(%q<timr_jsmin>, ["~> 1.0.1a"])
   end
 end
 
