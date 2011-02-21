@@ -1,6 +1,5 @@
 require 'rake/testtask'
 # require 'rake/rdoctask'
-require 'hanna/rdoctask'
 
 begin
   require 'jeweler'
@@ -24,21 +23,4 @@ rescue LoadError
   puts 'Jeweler is not available. Install it with: `gem install jeweler`'
 end
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib' << 'test'
-  t.pattern = 'test/*_test.rb'
-  t.verbose = true
-end
 
-task :default => :test
-
-desc 'Generate documentation'
-Rake::RDocTask.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'doc'
-  rdoc.title    = 'AssetHat'
-  rdoc.main     = 'README.rdoc'
-  rdoc.options  += %w[--line-numbers --inline-source]
-  %w[README.rdoc HISTORY LICENSE app/* lib/*].each do |path|
-    rdoc.rdoc_files.include(path)
-  end
-end
