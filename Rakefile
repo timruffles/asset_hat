@@ -17,7 +17,7 @@ begin
     gemspec.add_development_dependency  'hanna',    '>= 0.1.12'
     gemspec.add_development_dependency  'shoulda',  '>= 2.10.2'
     gemspec.add_runtime_dependency      'cssmin',   '>= 1.0.2'
-    gemspec.add_runtime_dependency      'jsmin',    '>= 1.0.1'
+    gemspec.add_runtime_dependency      'timr-jsmin',    '~> 1.0.1'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
